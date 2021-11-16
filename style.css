@@ -25,10 +25,12 @@ button {
     margin-top: 24px;
     cursor: pointer;
 }
+.nav__mobile button {
+    margin-top: 0;
+}
 .container {
     width: 1125px;
     height: auto;
-    
 }
 header {
     width: 100%;
@@ -74,6 +76,9 @@ header {
     display: flex;
     align-items: center;
 }
+.nav__mobile {
+    display: none;
+}
 .nav ul {
     display: flex;
 }
@@ -86,7 +91,7 @@ header {
 }
 .nav ul li a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.13em;
     color: rgba(31, 46, 53, 0.8);
     position: relative;
 }
@@ -142,7 +147,7 @@ main {
 }
 h1 {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 3em;
 }
 h1 span {
     color: #ee4248;
@@ -150,7 +155,7 @@ h1 span {
 
 .main__content p {
     margin-top: 24px;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 400;
 }
 
@@ -165,18 +170,18 @@ h1 span {
     justify-content: space-around;
 }
 .about__title {
-    width: 454px;
+    width: 45%;
 }
 .about__title h2 {
     font-weight: 500;
-    font-size: 32px;
+    font-size: 2em;
     color: #1F2E35;
 }
 .about__title h2 span {
     color: #ee4248;
 }
 .about__title p {
-    font-size: 18px;
+    font-size: 1.1em;
     font-weight: 500;
     color: #30444E;
     margin-top: 24px;
@@ -191,7 +196,7 @@ h1 span {
 }
 .product__block h2 {
     font-weight: 500;
-    font-size: 32px;
+    font-size: 2em;
 }
 .product__content {
     margin-top: 47px;
@@ -200,17 +205,270 @@ h1 span {
     justify-content: space-between;
 }
 .card {
-    width: 319px;
+    width: 30%;
 }
 .card h3 {
     margin-top: 16px;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 1.8em;
     color: #EE4248;
 }
 .card p {
     margin-top: 15px;
-    font-size: 18px;
-    line-height: 150%;
+    font-size: 1.2em;
     color: #30444E;
+}
+
+/* FOOTER */
+
+.footer__block {
+    display: flex;
+    justify-content: center;
+    padding: 138px 0 24px 0;
+    background: #fff;
+}
+.footer__content {
+    display: flex;
+}
+.footer__content .logo {
+    height: auto;
+}
+.adress h4 {
+    margin-top: 10px;
+}
+.adress p {
+    margin-top: 8px;
+}
+.contacts {
+    margin-left: 47px;
+}
+.contacts h4 {
+    margin-top: 35px;
+}
+.contacts p {
+    margin-top: 11px;
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+    background: #EE4248;
+    color: #fff;
+}
+.copyright__content {
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:1125px) {
+    .container {
+        width: 970px;
+    }
+    .nav ul li a {
+        font-size: .8em;
+    }
+    .main__title h1 {
+        font-size: 3em;
+    }
+    .main__title p {
+        font-size: 1.2em;
+    }
+    .links svg {
+        width: 15px;
+        height: 15px;
+        margin-right: 12px;
+    }
+    .links svg:nth-child(3){
+        margin-right: 0;
+    }
+    .main__img svg {
+        width: 400px;
+    }
+    .about__block {
+        height: auto;
+    }
+    .about__title h2 {
+        font-size: 1.3em;
+    }
+    .about__title p {
+        font-size: .9em;
+    }
+    .about__img svg {
+        width: 300px;
+    }
+    .product__block h2 {
+        font-size: 1.8em;
+    }
+    .card h3 {
+        font-size: 1.2em;
+    }
+    .card p {
+        font-size: .8em;
+    }
+}
+@media (max-width:992px) {
+    button {
+        width: 120px;
+        height: 40px;
+        padding: 12px 32px;
+        font-size: .7em;
+    }
+    .container {
+        width: 750px;
+    }
+    .nav ul li a {
+        font-size: .8em;
+    }
+    .main__title h1 {
+        font-size: 1.8em;
+    }
+    .main__title p {
+        font-size: .8em;
+    }
+    .links svg {
+        width: 15px;
+        height: 15px;
+        margin-right: 12px;
+    }
+    .links svg:nth-child(3){
+        margin-right: 0;
+    }
+    .main__img svg {
+        width: 400px;
+    }
+    .about__block {
+        height: auto;
+    }
+    .about__title h2 {
+        font-size: 1.3em;
+    }
+    .about__title p {
+        font-size: .9em;
+    }
+    .about__img svg {
+        width: 300px;
+    }
+    .product__block h2 {
+        font-size: 1.8em;
+    }
+    .card h3 {
+        font-size: 1.2em;
+    }
+    .card p {
+        font-size: .8em;
+    }
+    .adress h4 {
+        font-size: 1em;
+    }
+    .adress p {
+        font-size: .8em;
+    }
+    .contacts {
+        margin-top: 4px;
+    }
+    .contacts h4 {
+        font-size: 1em;
+    }
+    .contacts p {
+        font-size: .8em;
+    }
+    .copyright__content {
+        font-size: .8em;
+    }
+}
+@media (max-width:767px) {
+    .container {
+        max-width: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .nav {
+        display: none;
+    }
+    .nav__mobile {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .links {
+        display: none;
+    }
+    .main__title h1 {
+        font-size: 1.8em;
+    }
+    .main__title p {
+        font-size: .8em;
+    }
+    .links svg {
+        width: 15px;
+        height: 15px;
+        margin-right: 12px;
+    }
+    .links svg:nth-child(3){
+        margin-right: 0;
+    }
+    .main__img svg {
+        width: 200px;
+    }
+    .about__block {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .about__title h2 {
+        font-size: 1.3em;
+    }
+    .about__title p {
+        font-size: .9em;
+    }
+    .about__img {
+        display: none;
+    }
+    .about__title {
+        width: 100%;
+    }
+    .product__block h2 {
+        font-size: 1.8em;
+    }
+    .product__content {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card {
+        text-align: center;
+        width: 100%;
+        height: 350px;
+        flex: 1 0 auto;
+    }
+    .card__icon svg {
+        width: 70px;
+    }
+    .card h3 {
+        font-size: 1.4em;
+    }
+    .card p {
+        font-size: .9em;
+    }
+    .footer__block {
+        padding-top: 20px;
+    }
+    .adress h4 {
+        font-size: 1em;
+    }
+    .adress p {
+        font-size: .8em;
+    }
+    .contacts {
+        margin-top: 4px;
+    }
+    .contacts h4 {
+        font-size: 1em;
+    }
+    .contacts p {
+        font-size: .8em;
+    }
+    .copyright__content {
+        font-size: .8em;
+    }
 }
